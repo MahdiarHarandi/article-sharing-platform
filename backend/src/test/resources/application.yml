@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:articles_test;MODE=MySQL;DATABASE_TO_LOWER=TRUE;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+app:
+  seed-demo-data: false
+  cors:
+    allowed-origins: http://localhost:5173
+  security:
+    password:
+      iterations: 2000
+    jwt:
+      issuer: article-sharing-test
+      lifetime-minutes: 30
+      secret: test-only-secret-key-that-is-longer-than-thirty-two-bytes

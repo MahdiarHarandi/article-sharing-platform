@@ -1,0 +1,11 @@
+target/
+.git/
+.idea/
+*.iml
+.env
+.env.*
+!.env.example
+src/test/
+README.md
+run.sh
+run.bat

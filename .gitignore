@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Java and Maven
+**/target/
+*.class
+*.jar
+
+# Node / Vite
+**/node_modules/
+**/dist/
+
+# Editor and operating system
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs / local files
+*.log
+*.pid
+__pycache__/
+.pytest_cache/
